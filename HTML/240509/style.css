@@ -1,0 +1,20 @@
+/*태그 선택자 적용하기*/
+th{
+    color:red;
+}
+th{
+    color:royalblue;
+    border:1px
+}
+
+/*그룹 선택자로 적용하기*/
+h1,h2,p{
+    color:red;
+}
+
+/*상속 이용하기*/
+.parent{
+    color:blue;
+}
+
+/**/
