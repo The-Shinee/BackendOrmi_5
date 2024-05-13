@@ -1,4 +1,248 @@
+/*-----------------------------*/
+/* 0. Import */
+/*-----------------------------*/
+@import "Fonts.css";
+
+/*-----------------------------*/
+/* 1. Global Selector */
+/*-----------------------------*/
 *{
     box-sizing: border-box;
-    
+    padding: 0;
+    margin: 0;
+
+    font-family: GmarketSansMedium, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+}
+
+input[type="text"]{
+    color:black;
+}
+
+input[type="text"]::placeholder{
+    color: #BABCBE;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+.script-only{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0,0,0,0);
+}
+
+.background{
+    background-color: #5B2386;
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.anchor-relative{
+    position: relative;
+    vertical-align: top;
+}
+
+button{
+    background-color: #FCEE21;
+    border-radius: 56px;
+}
+
+button > strong{
+    color: #5B2386;
+}
+
+/*-----------------------------*/
+/* 2. Title */
+/*-----------------------------*/
+#title-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 125px;
+}
+
+#title-area > :nth-child(2){
+    z-index: 1;
+}
+
+#title-area > :last-child{
+    position: absolute;
+}
+
+#text-title{
+    font-family: "OTEnjoystoriesBA", sans-serif;
+    font-size: 36px;
+    line-height: 39.6px;
+    color: #F5DF4D;
+    height: 40px;
+    margin-bottom: 78px;
+}
+
+/*-----------------------------*/
+/* 3. Main Contents */
+/*-----------------------------*/
+#quotation-area{
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    font-size: 0;
+
+    margin-bottom: 102px;
+}
+
+#quotation-apostrophe{
+    position: absolute;
+    width: 493px;
+    top: 13px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#quotation-apostrophe > p{
+    font-size: 98px;
+    line-height: 98px;
+    color: #FCEE214D;
+}
+
+.text-quotation-main{
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.text-quotation-strong{
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+/*-----------------------------*/
+/* 3. Input Area */
+/*-----------------------------*/
+#input-area{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+    margin-bottom: 115px;
+}
+
+#input-area > *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+#input-nameBox{
+    width: 228px;
+    height: 57px;
+    border: 0;
+    border-radius: 7px;
+}
+
+#input-timeBox{
+    width: 228px;
+    height: 57px;
+    border: 0;
+    border-radius: 7px;
+}
+
+/*-----------------------------*/
+/* 4. Calculate Area */
+/*-----------------------------*/
+#calculate-area{
+    margin-bottom: 147px;
+}
+
+#button-calculate{
+    width: 565px;
+    height: 66px;
+}
+
+#img-click{
+    position: absolute;
+    top: 14px;
+    left: 7px;
+}
+
+/*-----------------------------*/
+/* 5. Answer Area */
+/*-----------------------------*/
+#answer-area{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+    margin-bottom: 127px;
+}
+
+#answer-area > *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+#answer-area strong{
+    font-size: 72px;
+    line-height: 72px;
+}
+
+/*-----------------------------*/
+/* 6. Guide Area */
+/*-----------------------------*/
+#guide-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 130px;
+}
+
+#button-guide{
+    width: 356px;
+    height: 66px;
+    /*padding: 21px 49px 21px 49px;*/
+}
+
+#button-share{
+    width: 191px;
+    height: 66px;
+    /*padding: 21px 49px 21px 49px;*/
+    color: #ffffff;
+}
+
+/*-----------------------------*/
+/* 7. Footer Area */
+/*-----------------------------*/
+#footer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#footer-area p{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    line-height: 17.38px;
 }

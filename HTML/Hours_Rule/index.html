@@ -2,13 +2,85 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
+        <link rel="stylesheet" href="./Resources/Styles/Style.css">
     </head>
     <body>
+        <div class="background">
+            <main>
+                <div id="title-area">
+                    <h1 class="script-only">1만 시간의 법칙</h1>
+                    <img src="./Resources/Images/UI_Title.svg" alt="">
+                    <img src="Resources/Images/UI_Clock.svg" alt="">
+                </div>
 
+                <h2 id="text-title">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</h2>
 
+                <div id="quotation-area">
+                    <p>
+                        <strong class="text-quotation-strong">1만 시간의 법칙</strong>
+                        <span class="text-quotation-main">
+                            은<br>
+                            어떤 분야의 전문가가 되기 위해서는<br>
+                            최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+                        </span>
+                    </p>
+                    <div id="quotation-apostrophe">
+                        <p>“</p>
+                        <p>”</p>
+                    </div>
+                </div>
+
+                <div id="input-area">
+                    <p>
+                        <span>나는</span>
+                        <label for="input-nameBox" class="script-only"></label>
+                        <input id="input-nameBox" type="text" placeholder="예)프로그래밍">
+                        <span>전문가가 될 것이다.</span>
+                    </p>
+                    <p>
+                        <span>그래서 앞으로 매일 하루에</span>
+                        <label for="input-timeBox" class="script-only"></label>
+                        <input id="input-timeBox" type="text" placeholder="예)5시간" autofocus>
+                        <span>시간씩 훈련할 것이다.</span>
+                    </p>
+                </div>
+
+                <div id="calculate-area">
+                    <button id="button-calculate">
+                        <strong>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</strong>
+                    </button>
+                    <span class="anchor-relative">
+                        <img id="img-click" src="Resources/Images/UI_Click.svg" alt="">
+                    </span>
+                </div>
+
+                <div id="answer-area">
+                    <p>
+                        <span>당신은</span>
+                        <strong>프로그래밍</strong>
+                        <span>전문가가 되기 위해서</span>
+                    </p>
+                    <p>
+                        <span>대략</span>
+                        <strong>5110</strong>
+                        <span>일 이상 훈련하셔야 합니다! :)</span>
+                    </p>
+                </div>
+
+                <div id="guide-area">
+                    <button id="button-guide"><strong>훈련하러 가기 GO!GO!</strong></button>
+                    <button id="button-share"><strong>공유하기</strong></button>
+                </div>
+            </main>
+
+            <footer id="footer-area">
+                <img src="./Resources/Images/UI_Logo.svg" alt="">
+                <p>※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>
+                    수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+            </footer>
+        </div>
     </body>
 </html>
