@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        body > .flex-contents-area
+        {
+            flex-grow: 1;
+        }
+
+        header{
+            background-color: #767676;
+            color: white;
+            padding: 5px;
+        }
+
+        footer{
+            background-color: #767676;
+            color: white;
+            padding: 5px;
+        }
+
+        .flex-contents-area
+        {
+            display: flex;
+        }
+
+        .flex-contents-area > main
+        {
+            flex-grow: 5;
+            padding: 5px;
+        }
+
+        .flex-contents-area > aside
+        {
+            flex-grow: 1;
+            background-color: #767676;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="font-style-title">Header</p>
+    </header>
+    <div class="flex-contents-area">
+        <main>
+            <p>Main Content</p>
+        </main>
+        <aside>
+            <p>SideBar</p>
+        </aside>
+    </div>
+    <footer>
+        <p class="font-style-title">Footer</p>
+    </footer>
+</body>
+</html>
