@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+    class Creature
+    {
+        constructor(name, hp, atk, def){
+            this.name = name;
+            this.hp = hp;
+            this.atk = atk;
+            this.def = def;
+        }
+
+        DoAttack(creature) {
+            if (creature === this)
+                return 0;
+
+            if(creature.__proto__ === this.__proto__){
+                console.log(`${this.name} : Attack to ${creature.name}`);
+                creature.DoHit(this);
+            }
+
+            return -1;
+        }
+        DoHit(creature) {
+            console.log(`${this.name} : Hit from ${creature.name}`);
+            this.hp -= (creature.atk - this.def);
+        }
+    }
+
+    let Player = new Creature('Cheolan', 20, 10, 5);
+    let Orc = new Creature('Orc', 30, 5, 7);
+
+    // function Creature(name, hp, atk, def){
+    //     this.name = name;
+    //     this.hp = hp;
+    //     this.atk = atk;
+    //     this.def = def;
+    // }
+    //
+    // Creature.prototype.DoAttack = function(creature) {
+    //     if (creature === this)
+    //         return 0;
+    //
+    //     console.log(`Attack to ${creature.name}`);
+    //     creature.DoHit(this);
+    // }
+    //
+    // Creature.prototype.DoHit = function(creature) {
+    //     console.log(`Hit from ${creature.name}`);
+    //     this.hp -= (creature.atk - this.def);
+    // }
+    //
+
+</script>
+</body>
+</html>
