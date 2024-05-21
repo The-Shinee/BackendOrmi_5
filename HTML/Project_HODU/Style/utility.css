@@ -11,9 +11,17 @@
     width: 143px;
 }
 
+.width-530{
+    width: 530px;
+}
+
 /* Height */
 .height-50{
     height: 50px;
+}
+
+.height-60{
+    height: 60px;
 }
 
 /* margin */

@@ -1,76 +1,87 @@
 /* Header */
-header{
-    background-color: #F2E9D8;
-    padding: 26px 320px 0;
-}
-
 #navbar-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 26px;
+    justify-content: center;
+
+    background-color: #F2E9D8;
 }
 
-#navbar-top > div{
-    display: flex;
+#navbar-top > .content-box{
+    height: 102px;
+}
+
+#navbar-top > .content-box > :last-child{
     justify-content: center;
-    align-items: center;
     gap: 49px;
 }
 
 .nav-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 30px;
 }
 
 /* Main */
-#top-banner-container{
-    padding: 32px 320px 0;
+/* Top banner */
+#banner-top{
     margin-bottom: 80px;
+
+    justify-content: center;
+
     background-color: #F2E9D8;
 }
 
-#main-padding{
-    padding: 0 320px;
+#banner-top > .content-box{
+    height: 798px;
+
+    align-items: flex-start;
 }
 
-.banners{
-    display: flex;
-    justify-content: space-between;
-}
+#banner-top > .content-box > :first-child{
+    padding-top: 200px;
 
-.banners :first-child{
-    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 40px;
 }
 
-.banners :first-child :first-child{
-    padding-top: 200px;
+#banner-top > .content-box > :last-child{
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-#title-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 110px;
+/* Introduce */
+#introduce{
     margin-bottom: 120px;
+
+    justify-content: center;
 }
 
-#title-container :last-child{
+#introduce > .content-box > :last-child{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
 }
 
-#description-container{
-    display: flex;
+#description{
+    margin-bottom: 88px;
+
+    justify-content: center;
+}
+
+#description > .content-box{
     flex-direction: column;
     text-align: center;
     gap: 40px;
-    margin-bottom: 88px;
+}
+
+#description > .content-box > :first-child{
+    color: #D97652;
+}
+
+#description > .content-box > :last-child > span{
+    color: #D97652;
 }
 
 #cat-list-container{
@@ -85,8 +96,24 @@ header{
     gap: 28px
 }
 
-#location-container{
+/* Location */
+#location{
     margin-bottom: 80px;
+
+    justify-content: center;
+}
+
+#location > .content-box{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#location > .content-box > :first-child{
+    margin-bottom: 20px;
+}
+
+#location > .content-box > :nth-child(2){
+    margin-bottom: 48px;
 }
 
 #subscribe-container{
@@ -105,10 +132,6 @@ header{
     gap: 18px;
 }
 
-#subscribe-container > *{
-    flex-grow: 5;
-}
-
 /* subscribe-form-container */
 #subscribe-container > :last-child{
     display: flex;
@@ -124,11 +147,6 @@ header{
     align-items: center;
     padding: 5px 6px 5px 28px;
     gap: 6px;
-    flex-grow: 5;
-}
-
-.input-full{
-    flex-grow: 9999;
 }
 
 /* Footer */

@@ -15,26 +15,28 @@
     </head>
     <body>
         <header>
-            <nav id="navbar-top">
-                <a href="https://naver.com/">
-                    <img src="Resource/Images/logo-header.svg" alt="호두">
-                </a>
-                <div>
-                    <div class="nav-links">
-                        <a href="https://www.naver.com/">Home</a>
-                        <a href="https://www.naver.com/">About</a>
-                        <a href="https://www.naver.com/">Support</a>
+            <section id="navbar-top" class="container">
+                <nav class="container content-box">
+                    <a href="https://naver.com/">
+                        <img src="Resource/Images/logo-header.svg" alt="호두">
+                    </a>
+                    <div class="container">
+                        <div class="nav-links container">
+                            <a href="https://www.naver.com/">Home</a>
+                            <a href="https://www.naver.com/">About</a>
+                            <a href="https://www.naver.com/">Support</a>
+                        </div>
+                        <button class="button-default width-140 height-50">
+                            Download
+                        </button>
                     </div>
-                    <button class="button-default width-140 height-50">
-                        Download
-                    </button>
-                </div>
-            </nav>
+                </nav>
+            </section>
         </header>
         <main>
-            <section id="top-banner-container">
-                <div class="banners">
-                    <div>
+            <section id="banner-top" class="container">
+                <div class="container content-box">
+                    <div class="container">
                         <h2 class="title-big">
                             Lorem Ipsum is simply<br>
                             dummy text of the printing and
@@ -49,11 +51,13 @@
                             Download
                         </button>
                     </div>
-                    <img src="Resource/Images/img-cat.svg" alt="고양이">
+                    <div class="container">
+                        <img src="Resource/Images/img-cat.svg" alt="고양이">
+                    </div>
                 </div>
             </section>
-            <div id="main-padding">
-                <section id="title-container">
+            <section id="introduce" class="container">
+                <div class="container content-box">
                     <img src="./Resource/Images/img-cat-subtitle.svg" alt="고양이">
                     <div>
                         <p class="main-title">
@@ -65,61 +69,65 @@
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                     </div>
-                </section>
-                <section id="description-container">
+                </div>
+            </section>
+            <section id="description" class="container">
+                <div class="container content-box">
                     <p class="title-big">
                         dummy text of the printing and dummy
                     </p>
                     <p class="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                        Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                     </p>
-                </section>
-                <section id="cat-list-container">
-                    <div id="show-more-container">
-                        <p class="title-24">
-                            Continue exploring HODU
-                        </p>
-                        <button class="button-default width-143 height-50">
-                            Show more
-                        </button>
-                    </div>
-                </section>
-                <hr class="margin-b-68">
-                <section id="location-container">
+                </div>
+            </section>
+            <section id="cat-list-container">
+                <div id="show-more-container">
+                    <p class="title-24">
+                        Continue exploring HODU
+                    </p>
+                    <button class="button-default width-143 height-50">
+                        Show more
+                    </button>
+                </div>
+            </section>
+            <hr class="margin-b-68">
+            <section id="location" class="container">
+                <div class="container content-box">
                     <p class="title-36">
                         Where you’ll be
                     </p>
                     <p class="description color-iron">
-                        330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+                        Progressing...
                     </p>
-                    <!--    API-->
-                </section>
-                <section id="subscribe-container">
-                    <div>
-                        <p class="title-36 color-white">
-                            Subscribe to our Blog post
-                        </p>
-                        <p class="description-14 color-ivory">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                            Lorem Ipsum has been the industry's standard dummy text
-                        </p>
-                    </div>
-                    <div>
-                        <form>
-                            <img src="./Resource/Images/icon-mail.svg" alt="" class="align-v-middle">
-                            <input type="email" placeholder="Enter your e-mail address" class="description border-less input-full align-v-middle">
-                            <button class="button-default width-135 height-50 align-v-middle">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
-                </section>
-            </div>
+                    <div id="map" style="width: 100%; height:520px;"></div>
+                </div>
+            </section>
+            <section id="subscribe-container">
+                <div>
+                    <p class="title-36 color-white">
+                        Subscribe to our Blog post
+                    </p>
+                    <p class="description-14 color-ivory">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                        Lorem Ipsum has been the industry's standard dummy text
+                    </p>
+                </div>
+                <div>
+                    <form class="width-530 height-60">
+                        <img src="./Resource/Images/icon-mail.svg" alt="" class="align-v-middle">
+                        <input type="email" placeholder="Enter your e-mail address" class="description border-less align-v-middle">
+                        <button class="button-default width-135 height-50 align-v-middle">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <!--위치를 무시하는 이미지??-->
-        <footer>
+        <footer class="base-contents-size">
             <a href="https://naver.com/">
                 <img src="Resource/Images/logo-footer.svg" alt="브랜드 로고">
             </a>
@@ -138,5 +146,77 @@
                 </a>
             </div>
         </footer>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d1a5a6bf215d1bd310f066fb0cc072ae&libraries=services"></script>
+        <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                mapOption = {
+                    center: new kakao.maps.LatLng(37.56699, 126.97821), // 지도의 중심좌표
+                    level: 4, // 지도의 확대 레벨
+                    mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+                };
+
+            // 지도를 생성한다
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+
+            // 지도 타입 변경 컨트롤을 생성한다
+            var mapTypeControl = new kakao.maps.MapTypeControl();
+
+            // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+            map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+            // 지도에 확대 축소 컨트롤을 생성한다
+            var zoomControl = new kakao.maps.ZoomControl();
+
+            // 지도의 우측에 확대 축소 컨트롤을 추가한다
+            map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+            // 현재 위치를 업데이트 할 텍스트 박스
+            const locationTextbox = document.querySelector("#location > .content-box > :last-child");
+
+            // HTML5의 geolocation으로 사용할 수 있는지 확인합니다
+            if (navigator.geolocation) {
+
+                // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+                navigator.geolocation.getCurrentPosition(function(position) {
+
+                    const lat = position.coords.latitude, // 위도
+                        lon = position.coords.longitude; // 경도
+
+                    const locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+
+                    const geocoder = new kakao.maps.services.Geocoder();
+                    geocoder.coord2Address(lon, lat, (result, status) =>{
+                        if (status === kakao.maps.services.Status.OK) {
+                            console.log('그런 너를 마주칠까 ' + result[0].address.address_name + '을 못가');
+                        }
+                    });
+
+                    const addressText = document.querySelector("#location > .content-box > :nth-child(2)");
+                    addressText.textContent = "lat, lon";
+
+                    // 마커와 인포윈도우를 표시합니다
+                    displayMarker(locPosition);
+                });
+
+            } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+
+                const locPosition = new kakao.maps.LatLng(33.450701, 126.570667);
+                displayMarker(locPosition);
+            }
+
+            // 지도에 마커를 표시하는 함수입니다
+            function displayMarker(locPosition) {
+
+                // 마커를 생성합니다
+                const marker = new kakao.maps.Marker({
+                    map: map,
+                    position: locPosition
+                });
+
+                // 지도 중심좌표를 접속위치로 변경합니다
+                map.setCenter(locPosition);
+            }
+
+        </script>
     </body>
 </html>
