@@ -92,3 +92,9 @@
 .align-v-middle{
     vertical-align: middle;
 }
+
+/* Anchor */
+
+.anchor{
+    position: relative;
+}
