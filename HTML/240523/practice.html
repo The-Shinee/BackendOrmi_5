@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>나의 todo list</h1>
+    <p>1. 오늘 저녁에는 부대찌게를 끓여 먹겠다.<button type="button">삭제</button></p>
+    <p>2. 후식으로 슈팅스타를 먹겠다.<button type="button">삭제</button></p>
+    <p>3. 자기 전에 반드시 내일 아침 메뉴를 생각해두겠다.<button type="button">삭제</button></p>
+
+    <script>
+        const p_tags = document.querySelectorAll("p");
+        for(let i = 0 ; i < p_tags.length ; i++){
+            p_tags[i].addEventListener("click", (event)=>{
+                alert(`${event.target.childNodes[0].textContent}`);
+            });
+        }
+
+
+        const button_tags = document.querySelectorAll("button");
+        for(let i = 0 ; i < button_tags.length ; i++)
+        {
+            button_tags[i].addEventListener("click", (event)=>{
+               const qna = confirm('지우시겠어요?');
+               if(qna)
+               {
+                   event.currentTarget.parentElement.remove();
+                   event.stopPropagation();
+               }
+            });
+        }
+
+    </script>
+</body>
+</html>
